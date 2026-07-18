@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Letter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hearts" aria-hidden="true">
+      <span class="heart h1">♡</span>
+      <span class="heart h2">♥</span>
+      <span class="heart h3">♡</span>
+    </div>
+
+    <main class="scrapbook-page">
+      <section class="page-paper">
+        <div class="washi-tape tape-left"></div>
+        <div class="washi-tape tape-right"></div>
+        <p class="handwritten intro">A little note for you</p>
+        <h2 id="noteTitle">Open When You Miss Me</h2>
+
+        <div class="letter-card is-visible">
+          <h3>From my heart</h3>
+          <p class="message" id="noteMessage">
+            Your love is the softest place I know.
+          </p>
+        </div>
+
+        <div class="photo-grid">
+          <div class="photo-card">
+            <img id="notePhoto" src="Images/1.jpeg" alt="A gentle memory" />
+          </div>
+        </div>
+
+        <div class="audio-card">
+          <div class="audio-controls">
+            <button class="audio-btn" id="playAudio">Play</button>
+            <span class="time-pill" id="voiceLabel">A soft note from my heart</span>
+          </div>
+          <div class="progress-row">
+            <div class="progress-bar"><span id="progressFill"></span></div>
+            <span class="time-pill" id="currentTime">00:00</span>
+            <span class="time-pill" id="remainingTime">-00:18</span>
+          </div>
+          <div class="volume-row">
+            <label for="volumeSlider">Volume</label>
+            <input class="volume-slider" id="volumeSlider" type="range" min="0.1" max="1" step="0.1" value="0.5" />
+          </div>
+        </div>
+
+        <div class="page-actions">
+          <a class="primary-btn" href="contents.html">Back to Contents</a>
+          <a class="primary-btn" href="letter2.html">Next Page</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
